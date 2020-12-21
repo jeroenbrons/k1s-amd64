@@ -82,19 +82,7 @@ traefik:
       entrypointLabels: true
       servicesLabels: true
     
-  env:
-    api:
-      name: NAMESILO_API_KEY
-      secretName: namesilo
-    propagation:
-      name: NAMESILO_PROPAGATION_TIMEOUT
-      value: 7200
-    polling:
-      name: NAMESILO_POLLING_INTERVAL
-      value: 60
-    ttl:
-      name: NAMESILO_TTL
-      value: 7200
+  env: {}
   
   probe:
     path: /ping
